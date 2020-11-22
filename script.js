@@ -14,10 +14,11 @@ function generatePassword() {
 
   var passwordLength = prompt("Please enter the length of your password. (Password must be between 8 to 128 characters.)");
   passwordLength = parseInt(passwordLength);
+  console.log(passwordLength);
   var passwordOptions = [];
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password length must be between 8 and 128 characters. Please enter again.");
-  } else {
+  } else if(passwordLength >=8 && passwordLength <=128) {
     var wantNumber = confirm("Do you want numbers in your password? please click ok to select.");
     if (wantNumber) {
       passwordOptions = passwordOptions.concat(numericChar);
@@ -36,7 +37,7 @@ function generatePassword() {
     }
     console.log(passwordOptions);
     if (passwordOptions.length === 0) {
-      alert("Please select at least one character type for you password");
+      alert("Please select at least one character type for you password.");
     } else {
       var randomPassword = [];
       for (var i = 0; i < passwordLength; i++) {
@@ -45,6 +46,8 @@ function generatePassword() {
         console.log(randomPassword);
       }
     }
+  } else {
+    alert("Please enter valid password length.")
   }
   return (randomPassword);
 }
