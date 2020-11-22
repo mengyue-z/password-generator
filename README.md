@@ -11,7 +11,7 @@ After that the randomly generated password will be displayed on the page.
 
 The following image shows this Password Generator Application's appearance and functionality:
 
-![password generator homework demo](./screenshots/Password-Generator.jpg)
+![password generator homework demo](./screenshots/Password_Generator.jpg)
 
 # Links
 
