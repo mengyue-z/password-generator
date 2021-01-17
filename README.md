@@ -1,4 +1,4 @@
-# week3-homework: Password Generator
+# Password Generator
 
 # Description
 
